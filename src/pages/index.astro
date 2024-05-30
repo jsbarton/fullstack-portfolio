@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ScrollButton from "../components/ScrollButton";
+import ProjectsCarousel from "../components/ProjectsCarousel";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,6 +12,9 @@ import ScrollButton from "../components/ScrollButton";
     </div>
     <div class="scroll-button">
       <ScrollButton client:load />
+    </div>
+    <div class="projects-carousel">
+      <ProjectsCarousel client:load />
     </div>
   </main>
 </Layout>
@@ -38,5 +42,11 @@ import ScrollButton from "../components/ScrollButton";
     font-style: normal;
     font-size: 50px;
     font-weight: 400;
+  }
+  .projects-carousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 200px;
   }
 </style>
