@@ -23,8 +23,7 @@ button {
 }
 
 .button {
-  background-color: red;
-  /* background-image: url('./src/images/down-arrow.svg'); */
+  background-image: url('./src/images/down-arrow.svg');
   background-repeat: no-repeat;
   background-size: 30px;
   height: 50px;
