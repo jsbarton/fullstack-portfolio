@@ -1,26 +1,26 @@
-import { Card, CardContent } from "/src/components/ui/card";
+import { Card, CardContent } from "@/src/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "/src/components/ui/carousel";
+} from "@/src/components/ui/carousel";
 
-const ProjectDescription = [
-  {
-    title: "Your call has been confirmed.",
-    description: "1 hour ago",
-    stack: "Built with: CSS, Squarespace dev",
-    status: "Complete",
-  },
-  {
-    title: "You have a new message!",
-    description: "1 hour ago",
-    stack: "Swift",
-    status: "In Progress",
-  },
-];
+// const ProjectDescription = [
+//   {
+//     title: "Your call has been confirmed.",
+//     description: "1 hour ago",
+//     stack: "Built with: CSS, Squarespace dev",
+//     status: "Complete",
+//   },
+//   {
+//     title: "You have a new message!",
+//     description: "1 hour ago",
+//     stack: "Swift",
+//     status: "In Progress",
+//   },
+// ];
 
 const ProjectsCarousel = () => {
   return (
