@@ -1,8 +1,10 @@
+import ProjectsCarousel from "./ProjectsCarousel";
 import "/src/styles/ScrollButton.css";
 import { useRef } from "react";
 
 const ScrollButton = () => {
   const projectsRef = useRef<HTMLDivElement | null>(null);
+  const aboutRef = useRef<HTMLDivElement | null>(null);
   return (
     <>
       <div className="button-container">
@@ -15,8 +17,12 @@ const ScrollButton = () => {
           ></button>
         </div>
       </div>
+      <div className="about" id="about" ref={aboutRef}>
+        <div className="title">About</div>
+      </div>
       <div className="projects-frame" id="projects" ref={projectsRef}>
-        Projects
+        <div className="title">Projects</div>
+        <ProjectsCarousel />
       </div>
     </>
   );

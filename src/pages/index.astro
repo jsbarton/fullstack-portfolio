@@ -1,20 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ScrollButton from "../components/ScrollButton";
-import ProjectsCarousel from "../components/ProjectsCarousel";
+import NavBar from "../components/NavBar";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Jordan Barton's Fullstack Portfolio">
   <main>
+    <NavBar client:load />
     <div class="welcome">
+      <img src="/self.jpg" height="75" width="75" />
       <div class="intro">Hi, I'm Jordan.</div>
       <div>Welcome to my Fullstack Portfolio.</div>
     </div>
+    {/** outer react component that handles refs  */}
     <div class="scroll-button">
       <ScrollButton client:load />
-    </div>
-    <div class="projects-carousel">
-      <ProjectsCarousel client:load />
     </div>
   </main>
 </Layout>
@@ -29,6 +29,17 @@ import ProjectsCarousel from "../components/ProjectsCarousel";
     color: black;
     font-size: 20px;
   }
+  img {
+    border-radius: 50%;
+    padding-bottom: 12px;
+  }
+  .welcome {
+    /* Font */
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 400;
+  }
   .welcome,
   .scroll-button {
     /* Positioning */
@@ -37,13 +48,9 @@ import ProjectsCarousel from "../components/ProjectsCarousel";
     flex-direction: column;
     position: relative;
     top: 30vh;
-    /* Font */
-    font-family: "Bebas Neue", sans-serif;
-    font-style: normal;
-    font-size: 50px;
-    font-weight: 400;
   }
-  .projects-carousel {
+  .projects-carousel,
+  .about {
     display: flex;
     justify-content: center;
     position: relative;

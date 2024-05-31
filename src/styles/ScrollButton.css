@@ -39,6 +39,17 @@ button {
   height: 100vh;
 }
 
-.projects-frame {
+.projects-frame,
+.about {
+  display: flex;
   height: 70vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 400;
 }
