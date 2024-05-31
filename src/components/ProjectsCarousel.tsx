@@ -1,11 +1,11 @@
-import { Card, CardContent } from "@/src/components/ui/card";
+import { Card, CardContent } from "/src/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/src/components/ui/carousel";
+} from "/src/components/ui/carousel";
 
 // const ProjectDescription = [
 //   {
