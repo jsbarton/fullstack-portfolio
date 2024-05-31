@@ -1,4 +1,9 @@
-import { Card, CardContent } from "../../src/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "../../src/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -7,31 +12,47 @@ import {
   CarouselPrevious,
 } from "../../src/components/ui/carousel";
 
-// const ProjectDescription = [
-//   {
-//     title: "Your call has been confirmed.",
-//     description: "1 hour ago",
-//     stack: "Built with: CSS, Squarespace dev",
-//     status: "Complete",
-//   },
-//   {
-//     title: "You have a new message!",
-//     description: "1 hour ago",
-//     stack: "Swift",
-//     status: "In Progress",
-//   },
-// ];
+const projectDescription = [
+  {
+    title: "We Met IRL Website",
+    imgPath: "",
+    description:
+      "Marketing website for a relationship building organization that hosts speed dating events, mixers, and social gatherigs, with divversity in mind",
+    stack: "CSS, Squarespace dev",
+    status: "Complete",
+  },
+  {
+    title: "Mantra",
+    imgPath: "",
+    description:
+      "Swift mobile app that provides users with daily, encouraging quotes",
+    stack: "Swift",
+    status: "In Progress",
+  },
+];
 
 const ProjectsCarousel = () => {
   return (
     <Carousel className="w-full max-w-xs">
       <CarouselContent>
-        {Array.from({ length: 2 }).map((_, index) => (
+        {projectDescription.map((description, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
               <Card className="bg-slate-50 rounded-3xl ">
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
+                <CardContent className="flex flex-col justify-center p-6">
+                  <CardTitle className="py-2">{description.title}</CardTitle>
+                  <CardDescription className="py-1">
+                    <span className="font-bold">{"Description: "}</span>
+                    {description.description}
+                  </CardDescription>
+                  <CardDescription className="py-1">
+                    <span className="font-bold">{"Stack: "}</span>
+                    {description.stack}
+                  </CardDescription>
+                  <CardDescription className="py-1">
+                    <span className="font-bold">{"Status: "}</span>
+                    {description.status}
+                  </CardDescription>
                 </CardContent>
               </Card>
             </div>
