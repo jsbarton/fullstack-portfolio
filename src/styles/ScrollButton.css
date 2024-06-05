@@ -65,3 +65,12 @@ button {
   text-align: center;
   width: 70vw;
 }
+
+.scroll-button {
+  /* Positioning */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 30vh;
+}

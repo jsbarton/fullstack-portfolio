@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+  font-family: system-ui, sans-serif;
+  background: radial-gradient(#e66465, #9198e5) no-repeat center center fixed;
+}
+body {
+  display: flex;
+  min-height: 100%;
+}
+
+main {
+  margin: auto;
+  padding: 1rem;
+  color: black;
+  font-size: 20px;
+}
+
+.intro {
+  font-size: 30px;
+}
+
+.self {
+  border-radius: 50%;
+  padding-bottom: 12px;
+}
+
+.welcome {
+  /* Font */
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 400;
+}
+.welcome,
+.scroll-button {
+  /* Positioning */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 30vh;
+}
+
+.projects-carousel,
+.about {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 200px;
+}
+
+.projects-frame {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+}

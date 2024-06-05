@@ -1,59 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ScrollButton from "../components/ScrollButton";
-import NavBar from "../components/NavBar";
+import Container from "../components/Container";
 ---
 
 <Layout title="Jordan Barton's Fullstack Portfolio">
   <main>
-    <NavBar client:load />
-    <div class="welcome">
-      <img src="/self.jpg" height="75" width="75" />
-      <div class="intro">Hi, I'm Jordan.</div>
-      <div>Welcome to my Fullstack Portfolio.</div>
-    </div>
-    {/** outer react component that handles refs  */}
-    <div class="scroll-button">
-      <ScrollButton client:load />
-    </div>
+    <Container client:load />
   </main>
 </Layout>
-
-<style>
-  .intro {
-    font-size: 30px;
-  }
-  main {
-    margin: auto;
-    padding: 1rem;
-    color: black;
-    font-size: 20px;
-  }
-  img {
-    border-radius: 50%;
-    padding-bottom: 12px;
-  }
-  .welcome {
-    /* Font */
-    font-family: "Bebas Neue", sans-serif;
-    font-style: normal;
-    font-size: 50px;
-    font-weight: 400;
-  }
-  .welcome,
-  .scroll-button {
-    /* Positioning */
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 30vh;
-  }
-  .projects-carousel,
-  .about {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 200px;
-  }
-</style>

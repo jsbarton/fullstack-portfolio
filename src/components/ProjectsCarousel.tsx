@@ -23,7 +23,7 @@ const projectDescription = [
   },
   {
     title: "Mantra",
-    imgPath: "/favicon.svg", // remember to change this
+    imgPath: "/favicon.svg",
     description:
       "Swift mobile app that provides users with daily, encouraging quotes",
     stack: "Swift",
